@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watchcss": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch",
-    "buildcss": "npx tailwindcss -i ./style.css -o ./dist/output.css --build"
+    "buildcss": "npx tailwindcss -i ./style.css -o ./dist/output.css --build",
+    "startBackend": "json-server --watch ../data/db.json"
   },
   "keywords": [],
   "author": "",
