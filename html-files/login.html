@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <img
+      id="prev-icon"
+      class="cursor-pointer"
+      src="../asset/images/icons/prev icon.png"
+      alt="prev icon"
+    />
+    <form class="h-[90%] p-6 flex flex-col items-center justify-between">
+      <img src="../asset/images/logos/logo.png" alt="logo" />
+      <div class="flex flex-col items-center justify-between w-full">
+        <p class="font-semibold text-2xl whitespace-nowrap">
+          Login to Your Account
+        </p>
+        <div class="w-full relative mt-8 mb-4">
+          <img
+            id="email-icon"
+            class="absolute left-2 top-3"
+            src="../asset/images/icons/envelope-gray.svg"
+            alt="icon-email"
+          />
+          <img
+            id="email-icon-black"
+            class="hidden absolute left-2 top-3"
+            src="../asset/images/icons/envelope-fill.svg"
+            alt="icon-email"
+          />
+          <input
+            type="email"
+            id="email-input"
+            class="w-full py-2 pl-8 pr-4 rounded-lg bg-gray-50 outline-black"
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="relative w-full">
+          <img
+            id="password-icon"
+            class="absolute left-2 top-3"
+            src="../asset/images/icons/lock-fill.svg"
+            alt="icon-lock"
+          />
+          <img
+            id="password-icon-black"
+            class="hidden absolute left-2 top-3"
+            src="../asset/images/icons/lock-black.svg"
+            alt="icon-lock"
+          />
+          <input
+            type="password"
+            id="password-input"
+            class="w-full py-2 pl-8 pr-8 rounded-lg bg-gray-50 outline-black"
+            placeholder="Password"
+          />
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer"
+          >
+            <img
+              id="eye-gray"
+              src="../asset/images/icons/eye-slash-fill.svg"
+              alt="invisible-eye"
+            />
+            <img
+              id="eye-black"
+              class="hidden"
+              src="../asset/images/icons/eye-slash-black.svg"
+              alt="visible-eye"
+            />
+            <img
+              id="eye"
+              class="hidden"
+              src="../asset/images/icons/eye.svg"
+              alt="eye"
+            />
+          </div>
+        </div>
+
+        <label class="mt-4 flex items-center">
+          <input type="checkbox" class="rounded h-4 w-4 accent-black mr-2" />
+          Remember me
+        </label>
+      </div>
+      <div class="w-full">
+        <button
+          id="signin-button"
+          class="w-full rounded-3xl bg-gray-600 text-white py-2 px-4"
+          disabled
+        >
+          Sign In
+        </button>
+      </div>
+    </form>
+    <script type="module" src="../js/login.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>
