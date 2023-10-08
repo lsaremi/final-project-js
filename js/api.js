@@ -12,6 +12,11 @@ export const checkUser = async (email, password) => {
     // Check if authentication is successful
     if (userData.length > 0) {
       showToast("Authentication successful. You can sign in.", green1, green2);
+
+      // Delay for a few seconds before navigating to home-page1.html
+      setTimeout(() => {
+        window.location.href = "home-page1.html";
+      }, 2000);
     } else {
       showToast(
         "Authentication failed. Invalid email or password.",
