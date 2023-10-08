@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page 1</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="../js/home-page1.js"></script>
+  </head>
+  <body>
+    <div class="container py-2 px-4 h-max text-title-HeadingTitleColor">
+      <header class="flex flex-col mb-8">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center">
+            <div
+              class="bg-black rounded-full w-12 h-12 flex items-center justify-center relative"
+            >
+              <div
+                class="absolute border-t-2 border-neutral-200 w-full -rotate-45"
+              ></div>
+              <div class="bg-neutral-900 opacity-75">
+                <p class="text-white opacity-100 text-sm">1:1</p>
+              </div>
+            </div>
+            <div class="ml-4">
+              <p class="text-title-midumGray">Good Morning 👋</p>
+              <p class="font-bold">Elham Saremi</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img
+              class="mr-2"
+              src="../asset/images/icons/bell.svg"
+              alt="bell-icon"
+            />
+            <img src="../asset/images/icons/heart.svg" alt="heart-icon" />
+          </div>
+        </div>
+        <div></div>
+
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+          >
+            <svg
+              class="w-4 h-4 text-gray-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+          </div>
+          <input
+            type="search"
+            class="block w-full py-3 px-4 pl-10 text-sm text-title-HeadingTitleColor rounded-lg bg-gray-50 border-none outline-gray-500"
+            placeholder="Search"
+            required
+          />
+        </div>
+      </header>
+      <section class="grid grid-cols-4 gap-x-1 gap-y-8 mb-8">
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 bg-gray-200 flex items-center justify-center rounded-full"
+          >
+            <img src="../asset/images/logos/nike.svg" alt="brand-logo" />
+          </div>
+          <p class="text-sm font-semibold">Nike</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 bg-gray-200 flex items-center justify-center rounded-full"
+          >
+            <img src="../asset/images/logos/addidas.svg" alt="brand-logo" />
+          </div>
+          <p class="text-sm truncate font-semibold">Adidas</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 bg-gray-200 flex items-center justify-center rounded-full"
+          >
+            <img src="../asset/images/logos/puma.svg" alt="brand-logo" />
+          </div>
+          <p class="text-sm truncate font-semibold">Puma</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 bg-gray-200 flex items-center justify-center rounded-full"
+          >
+            <img src="../asset/images/logos/asics.svg" alt="brand-logo" />
+          </div>
+          <p class="text-sm truncate font-semibold">Asics</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 bg-gray-200 flex items-center justify-center rounded-full"
+          >
+            <img src="../asset/images/logos/reebok.svg" alt="brand-logo" />
+          </div>
+          <p class="text-sm truncate font-semibold">Reebok</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 bg-gray-200 flex items-center justify-center rounded-full"
+          >
+            <img src="../asset/images/logos/new bal...svg" alt="brand-logo" />
+          </div>
+          <p class="text-sm truncate font-semibold whitespace-nowrap w-10/12">
+            New Balance
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 bg-gray-200 flex items-center justify-center rounded-full"
+          >
+            <img src="../asset/images/logos/converse.svg" alt="brand-logo" />
+          </div>
+          <p class="text-sm truncate font-semibold">Converse</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-14 h-14 bg-gray-200 flex items-center justify-center rounded-full"
+          >
+            <img src="../asset/images/logos/more.svg" alt="brand-logo" />
+          </div>
+          <p class="text-sm truncate font-semibold">More...</p>
+        </div>
+      </section>
+      <main class="mb-4">
+        <div class="flex items-center justify-between font-semibold mb-2">
+          <h2 class="text-xl">Most Popular</h2>
+          <p class="text-base">See All</p>
+        </div>
+        <div
+          class="flex items-center gap-x-4 overflow-x-auto scrollbar-hide mb-4 text-title-dark font-semibold"
+        >
+          <div
+            class="whitespace-nowrap px-4 py-1 bordder border-2 border-gray-800 rounded-2xl"
+          >
+            All
+          </div>
+          <div
+            class="whitespace-nowrap px-4 py-1 bordder border-2 border-gray-800 rounded-2xl"
+          >
+            Nike
+          </div>
+          <div
+            class="whitespace-nowrap px-4 py-1 bordder border-2 border-gray-800 rounded-2xl"
+          >
+            Adidas
+          </div>
+          <div
+            class="whitespace-nowrap px-4 py-1 bordder border-2 border-gray-800 rounded-2xl"
+          >
+            Puma
+          </div>
+          <div
+            class="whitespace-nowrap px-4 py-1 bordder border-2 border-gray-800 rounded-2xl"
+          >
+            Asics
+          </div>
+          <div
+            class="whitespace-nowrap px-4 py-1 bordder border-2 border-gray-800 rounded-2xl"
+          >
+            Reebok
+          </div>
+          <div
+            class="whitespace-nowrap px-4 py-1 bordder border-2 border-gray-800 rounded-2xl"
+          >
+            New Balance
+          </div>
+          <div
+            class="whitespace-nowrap px-4 py-1 bordder border-2 border-gray-800 rounded-2xl"
+          >
+            Converse
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-x-2 gap-y-4">
+          <div>
+            <div
+              class="p-4 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img src="../asset/images/imges/nike/shoe1.png" alt="shoe-img" />
+            </div>
+            <p class="truncate whitespace-nowrap font-bold text-xl">
+              K-Swiss Men's Vista Trainer Sneaker
+            </p>
+            <p class="font-semibold text-base">$ 85.00</p>
+          </div>
+          <div>
+            <div
+              class="p-4 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img src="../asset/images/imges/nike/shoe1.png" alt="shoe-img" />
+            </div>
+            <p class="truncate whitespace-nowrap font-bold text-xl">
+              K-Swiss Men's Vista Trainer Sneaker
+            </p>
+            <p class="font-semibold text-base">$ 85.00</p>
+          </div>
+          <div>
+            <div
+              class="p-4 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img src="../asset/images/imges/nike/shoe1.png" alt="shoe-img" />
+            </div>
+            <p class="truncate whitespace-nowrap font-bold text-xl">
+              K-Swiss Men's Vista Trainer Sneaker
+            </p>
+            <p class="font-semibold text-base">$ 85.00</p>
+          </div>
+          <div>
+            <div
+              class="p-4 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img src="../asset/images/imges/nike/shoe1.png" alt="shoe-img" />
+            </div>
+            <p class="truncate whitespace-nowrap font-bold text-xl">
+              K-Swiss Men's Vista Trainer Sneaker
+            </p>
+            <p class="font-semibold text-base">$ 85.00</p>
+          </div>
+        </div>
+      </main>
+      <footer class="flex items-center justify-between px-4">
+        <div class="flex flex-col items-center">
+          <img
+            src="../asset/images/icons/home.png"
+            alt="logo-footer"
+            class=""
+          />
+          <p class="text-tinyText font-semibold text-title-HeadingTitleColor">
+            Home
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="../asset/images/icons/cart.png"
+            alt="logo-footer"
+            class=""
+          />
+          <p class="text-tinyText font-semibold text-title-HeadingTitleColor">
+            Cart
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="../asset/images/icons/shoppi.png"
+            alt="logo-footer"
+            class=""
+          />
+          <p class="text-tinyText font-semibold text-title-HeadingTitleColor">
+            Orders
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="../asset/images/icons/wallet.png"
+            alt="logo-footer"
+            class=""
+          />
+          <p class="text-tinyText font-semibold text-title-HeadingTitleColor">
+            Wallet
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="../asset/images/icons/profile.png"
+            alt="logo-footer"
+            class=""
+          />
+          <p class="text-tinyText font-semibold text-title-HeadingTitleColor">
+            Profile
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>
