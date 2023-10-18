@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Successful</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <script src="../js/home-page1.js"></script>
+  </head>
+  <body>
+    <div
+      class="bg-slate-50 container py-2 text-title-HeadingTitleColor max-w-lg mx-auto relative"
+    >
+      <div class="">
+        <main class="mb-4 mx-4">
+          <div class="flex items-center justify-between font-semibold mb-2">
+            <div class="flex items-center">
+              <img
+                id="prev-icon"
+                class="cursor-pointer"
+                src="../asset/images/icons/prev icon.png"
+                alt="prev icon"
+              />
+              <h2 class="text-xl"></h2>
+            </div>
+          </div>
+
+          <!-- invis block -->
+          <div
+            class="h-full w-full z-10 flex items-center justify-center bg-tar p-x-[65px]"
+            style="background-color: #00000094"
+          >
+            <div
+              class="bg-white flex flex-col items-center p-4 rounded-3xl gap-y-5 w-full max-w-[415px] max-h-[512px] z-30"
+            >
+              <img src="../asset/images/imges/ordersuccess.png" alt="" />
+              <div class="font-bold text-xl">Order Successful!</div>
+              <div class="">You have Successfully made order</div>
+              <!-- buttons -->
+              <div class="flex flex-col w-full gap-y-5 items-center">
+                <div
+                  class="bg-black text-white py-4 font-bold w-11/12 flex items-center justify-center rounded-full cursor-pointer"
+                >
+                  View Order
+                </div>
+                <div
+                  class="bg-slate-100 text-black py-4 font-bold w-11/12 flex items-center justify-center rounded-full cursor-pointer"
+                >
+                  View E-Receipt
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </main>
+        <!-- button -->
+        <div
+          class="border-t border-slate-200 rounded-t-[60px] py-5 px-5 mt-10 absolute bottom-0 w-full"
+        >
+          <div
+            class="flex items-center justify-center bg-black px-6 py-6 gap-x-5 rounded-full cursor-pointer"
+          >
+            <div class="text-white font-bold">Confirm Payment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>

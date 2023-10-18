@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const querryParam = new URLSearchParams(window.location.search);
+      //   console.log("querryParam :", querryParam);
+      //   console.log("window.location.search :", window.location.search);
+
+      let url = new URL("https://javascriptjeep.com?mode=night&page=2");
+      //   console.log(url);
+
+      let url2 = new URLSearchParams({
+        name: "eli",
+        pass: 123,
+        page: 8,
+        job: "front developer",
+      });
+
+      const myPage = url2.get("page");
+      console.log("myPage", myPage);
+      url2.set("name", "elham");
+      url2.set("page", "5");
+      for (const [key, value] of url2) {
+        console.log(`${key} =>  ${value}`);
+      }
+      let params = new URLSearchParams(url.search);
+      console.log(params);
+      console.log(url2.toString());
+    </script>
+  </body>
+</html>

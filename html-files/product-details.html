@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="max-w-lg mx-auto">
+      <!--  -->
+      <div class="flex items-center font-semibold pl-5 bg-gray-100">
+        <img
+          id="prev-icon"
+          class="cursor-pointer"
+          src="../asset/images/icons/prev icon.png"
+          alt="prev icon"
+        />
+      </div>
+      <!--  -->
+      <div
+        id="carouselDarkVariant"
+        class="relative pb-10 bg-gray-100"
+        data-te-carousel-init
+        data-te-ride="carousel"
+        data-te-interval="false"
+      >
+        <!-- Carousel indicators -->
+        <div
+          class="absolute inset-x-0 z-10 mx-[15%] flex list-none justify-center p-0 bottom-0"
+          data-te-carousel-indicators
+        >
+          <button
+            data-te-target="#carouselDarkVariant"
+            data-te-slide-to="0"
+            data-te-carousel-active
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            data-te-target="#carouselDarkVariant"
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            data-te-slide-to="1"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            data-te-target="#carouselDarkVariant"
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            data-te-slide-to="2"
+            aria-label="Slide 1"
+          ></button>
+        </div>
+
+        <!-- Carousel items -->
+        <div
+          class="w-full overflow-hidden after:clear-both after:block after:content-['']"
+        >
+          <!-- First item -->
+          <div
+            class="float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+            data-te-carousel-active
+          >
+            <div class="flex items-center justify-center py-10">
+              <img
+                src="../asset/images/imges/nike/shoe2.png"
+                class="object-cover"
+                alt="shoes"
+              />
+            </div>
+          </div>
+          <!-- Second item -->
+          <div
+            class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+          >
+            <div class="flex items-center justify-center py-10">
+              <img
+                src="../asset/images/imges/nike/shoe4.png"
+                class="object-cover"
+                alt="shoes"
+              />
+            </div>
+          </div>
+          <!-- Third item -->
+          <div
+            class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+          >
+            <div class="flex items-center justify-center py-8">
+              <img
+                src="../asset/images/imges/nike/shoe6.png"
+                class="object-cover"
+                alt="shoes"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-4 pb-4">
+        <div>
+          <div class="flex justify-between mt-4 mb-2">
+            <h1 class="text-2xl whitespace-nowrap font-bold">
+              Air Jordan 3 Retro
+            </h1>
+            <img class="w-6 h-6" src="../asset/images/imges/like.png" alt="" />
+          </div>
+          <!--  -->
+          <div class="flex place-items-center gap-2 my-4">
+            <div class="rounded-md bg-gray-200 py-[3px] px-2 text-xs">
+              6.641 sold
+            </div>
+            <div class="ml-2">
+              <img class="w-5" src="../asset/images/imges/star.png" alt="" />
+            </div>
+            <div class="text-xs">4.6 (5.389 reviews)</div>
+          </div>
+          <div class="w-full h-[1px] bg-gray-200"></div>
+          <!--  -->
+          <h2 class="mt-4 font-bold text-xl">Description</h2>
+          <div class="mt-2">
+            <span
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Recusandae dolorum reiciendis quidem</span
+            >
+            <span class="cursor-pointer font-bold">view more...</span>
+          </div>
+        </div>
+        <!-- size -->
+        <div class="mt-4 flex items-center justify-between">
+          <!-- size -->
+          <div class="flex flex-col items-start">
+            <h2 class="text-xl font-bold mb-2">Size</h2>
+            <div class="flex gap-2 mt-2">
+              <!--  -->
+              <div
+                class="whitespace-nowrap px-2 py-1 bordder border-2 border-gray-800 rounded-full cursor-pointer hover:bg-gray-200 w-fit"
+              >
+                40
+              </div>
+              <!--  -->
+              <div
+                class="whitespace-nowrap px-2 py-1 bordder border-2 border-gray-800 text-gray-200 rounded-full cursor-pointer bg-gray-800 hover:bg-gray-700 w-fit"
+              >
+                41
+              </div>
+              <div
+                class="whitespace-nowrap px-2 py-1 bordder border-2 border-gray-800 rounded-full cursor-pointer hover:bg-gray-200 w-fit"
+              >
+                42
+              </div>
+            </div>
+          </div>
+          <!-- color -->
+          <div class="flex flex-col items-start">
+            <h2 class="text-xl font-bold mb-2">Color</h2>
+            <div
+              class="flex items-center overflow-x-scroll scrollbar-hide mt-2 w-[9rem]"
+            >
+              <!--  -->
+              <div class="w-10 h-10 mr-1">
+                <div
+                  class="flex items-center justify-center whitespace-nowrap rounded-full cursor-pointer bg-gray-100 w-10 h-10 mr-1"
+                >
+                  <img
+                    class="w-4 h-4"
+                    src="../asset/images/imges/check.png"
+                    alt="tick-icon"
+                  />
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-10 h-10 mr-1">
+                <div
+                  class="flex whitespace-nowrap text-gray-200 rounded-full cursor-pointer bg-gray-600 w-10 h-10"
+                ></div>
+              </div>
+
+              <div class="w-10 h-10 mr-1">
+                <div
+                  class="flex whitespace-nowrap mr-1 rounded-full cursor-pointer bg-purple-600 w-10 h-10"
+                ></div>
+              </div>
+
+              <div class="w-10 h-10 mr-1">
+                <div
+                  class="flex whitespace-nowrap mr-1 rounded-full cursor-pointer bg-orange-900 w-10 h-10"
+                ></div>
+              </div>
+              <div class="w-10 h-10 mr-1">
+                <div
+                  class="flex whitespace-nowrap mr-1 rounded-full cursor-pointer bg-sky-500 w-10 h-10"
+                ></div>
+              </div>
+
+              <div class="w-10 h-10 mr-1">
+                <div
+                  class="flex whitespace-nowrap mr-1 rounded-full cursor-pointer bg-purple-900 w-10 h-10"
+                ></div>
+              </div>
+
+              <div class="w-10 h-10 mr-1">
+                <div
+                  class="flex whitespace-nowrap mr-1 rounded-full cursor-pointer bg-orange-200 w-10 h-10"
+                ></div>
+              </div>
+
+              <div class="w-10 h-10 mr-1">
+                <div
+                  class="flex whitespace-nowrap mr-1 rounded-full cursor-pointer bg-sky-800 w-10 h-10"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- quantity -->
+        <div class="my-6 flex items-center gap-x-10">
+          <h2 class="text-lg font-bold">Quantity</h2>
+          <div class="flex gap-x-1 bg-gray-200 self-center rounded-3xl">
+            <div class="text-xl font-bold">
+              <div class="py-1 px-4 cursor-pointer rounded-full">-</div>
+            </div>
+            <div class="text-xl font-bold">
+              <div class="py-1 px-4 cursor-pointer rounded-full">2</div>
+            </div>
+            <div class="text-xl font-bold">
+              <div class="py-1 px-4 cursor-pointer rounded-full">+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-gray-200"></div>
+
+        <!-- total price -->
+        <div class="mt-4 flex items-center justify-between">
+          <!-- text -->
+          <div class="">
+            <div class="text-sm mb-1">Total price</div>
+            <div class="text-xl font-bold">$240.00</div>
+          </div>
+          <!-- button -->
+          <div class="">
+            <div
+              class="flex items-center bg-black text-white px-8 py-3 rounded-full cursor-pointer"
+            >
+              <img src="../asset/images/icons/bag-4-bold.svg" alt="bag-icon" />
+              <span class="whitespace-nowrap ml-2">Add to cart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  </body>
+</html>
