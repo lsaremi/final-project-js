@@ -19,9 +19,9 @@ module.exports = {
         text1: "32px",
         tinyText: "10px",
       },
-      // backgroundImage: {
-      //   bg_image: "url('asset/images/shoes1.jpg')",
-      // },
+      boxShadow: {
+        shadowBtn: "17px 21px 22px -11px rgba(51,51,51,0.64)",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],
