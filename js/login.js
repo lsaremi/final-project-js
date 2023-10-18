@@ -18,13 +18,13 @@ prevIcon.addEventListener("click", function () {
   window.location.href = "slider.html";
 });
 
-// Function to save user input in local storage
+// function to save user input in local storage
 function saveUserInput(email, password) {
   localStorage.setItem("savedEmail", email);
   localStorage.setItem("savedPassword", password);
 }
 
-// Function to load user input from local storage
+// function to load user input from local storage
 function loadUserInput() {
   const savedEmail = localStorage.getItem("savedEmail");
   const savedPassword = localStorage.getItem("savedPassword");
@@ -36,7 +36,7 @@ function loadUserInput() {
   }
 }
 
-// Function to toggle password visibility
+// function to toggle password visibility
 function togglePasswordVisibility() {
   const isPasswordVisible = passwordInput.type === "text";
   if (isPasswordVisible) {
@@ -54,7 +54,7 @@ function validateInputs() {
   const emailValue = emailInput.value.trim();
   const passwordValue = passwordInput.value.trim();
 
-  // Disable the button if either input is empty
+  // fisable the button if either input is empty
   if (emailValue === "" || passwordValue === "") {
     signInButton.disabled = true;
     signInButton.style.background = "rgb(75 85 99)";
@@ -77,36 +77,33 @@ function validateInputs() {
   return emailValue !== "" && passwordValue !== "";
 }
 
-// Function to handle the form submission
+// function to handle the form submission
 const handleFormSubmit = async (e) => {
   e.preventDefault();
 
-  // Get the user's input
   const email = emailInput.value;
   const password = passwordInput.value;
 
-  // Save user input if "Remember me" is checked
+  // save user input if "Remember me" is checked
   if (rememberMeCheckbox.checked) {
     saveUserInput(email, password);
   }
 
-  // Validate the inputs
+  // validate the inputs
   if (!validateInputs()) {
     return;
   }
-  // Submit the form to the API
   checkUser(email, password);
 };
 
-// Add event listeners
+// add event listeners
 document.addEventListener("DOMContentLoaded", () => {
   loadUserInput();
   validateInputs();
 
-  // Add an event listener to the "Remember me" checkbox
+  // add an event listener to the remember me checkbox
   rememberMeCheckbox.addEventListener("change", () => {
     if (!rememberMeCheckbox.checked) {
-      // If the checkbox is unchecked, remove user info from local storage
       localStorage.removeItem("savedEmail");
       localStorage.removeItem("savedPassword");
     }
@@ -115,10 +112,10 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", handleFormSubmit);
 });
 
-// Add event listeners to the toggle password visibility buttons
+// add event listeners to the toggle password visibility buttons
 eyeBlack.addEventListener("click", togglePasswordVisibility);
 eye.addEventListener("click", togglePasswordVisibility);
 
-// Add event listeners to the email and password inputs
+// add event listeners to the email and password inputs
 emailInput.addEventListener("input", validateInputs);
 passwordInput.addEventListener("input", validateInputs);
